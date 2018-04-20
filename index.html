@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello World DApp</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+    .font-size{
+        font-size: 20px;
+        
+    }
+    .table-boder{
+        padding: 5px;
+        border: 1px;
+        border-style: solid;
+    }
+
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="row"><Center><h1>Demo Wallet</h1></Center></div>
+<div class="row">
+    <div class="col-md-4 font-size table-boder"><b>Balences</b></div>
+    <div class="col-md-4 font-size table-boder"><b>Wei</b></div>
+    <div class="col-md-4 font-size table-boder"><b>Ether</b></div>
+</div>
+
+<div class="row">
+    <div class="col-md-4 table-boder"  id="balence-id">none</div>
+    <div class="col-md-4 table-boder" id="wei-id">none</div>
+    <div class="col-md-4 table-boder" id="Ether-id">none</div>
+</div>
+
+<div class="row" style="margin-top:50px">
+    <div class="col-md-3"><input type="text" id="inputAddress"  placeholder="add Address"/></div>
+    <div class="col-md-4"><a href="#"  onclick="SendTransaction()" class= "btn btn-primary">Call SmartContract</a></div>    
+</div>
+
+<div style="margin-top:50px">
+    <div class="row">
+    <div class="col-md-2"><input type="text" id="set-name" placeholder="Name"/></div>
+    <div class="col-md-2"><input type="text" id="set-mssv" placeholder="MSSV"/></div>
+    <div class="col-md-2"><input type="text" id="setAddress" placeholder="Account"></div>
+    <div class="col-md-3"><a class="btn btn-primary" onclick="setCerti()" href="#">Set Certifiate</a></div>
+    </div>
+    <div class="col-md-12">
+        <center><h1>Result</h1></center>
+        <label id="result" class="text-primary"></label>
+    </div>
+</div>
+
+<div class="row" style="margin-top:100px">
+    <center><h1>EVENT</h1></center>
+    <div class="col-md-8"></div>
+    <div class="col-md-4">Name</div>
+    <div class="col-md-4">Mssv</div>
+    <div class="col-md-4">State</div>
+</div>
+</div>
+
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./demoWallet.js"></script>
+</body>
+</html>
